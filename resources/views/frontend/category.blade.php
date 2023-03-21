@@ -16,7 +16,7 @@
                             <div class="col-md-4 mb-3">
                                 <a href="{{  url('category/'.$cate->slug)   }}">
                                     <div class="card my-auto">
-                                        <img src="{{  asset('assets/uploads/category/'.$cate->image)  }}" alt="Category image">
+                                        <img src="{{  asset('assets/uploads/category/'.$cate->image)  }}" height="350px" alt="Category image">
                                             <div class="card-body">
                                                 <h5 class=""><b>{{   $cate->name   }}</b></h5>
                                                 <p class="">

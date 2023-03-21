@@ -7,15 +7,15 @@
 @section('content')
     @include('layouts.inc.slider')
 
-    <div class="py-5 bg-black">
+    <div class="py-5 bg-black       ">
         <div class="container">
             <div class="row">
                 <h2 class="mb-3 text-white">Featured Products</h2>
                 <div class="owl-carousel featured-carousel owl-theme">
                     @foreach ($featured_products as $prod)
-                        <div class="item image-new">
+                        <div class="item">
                             <div class="card ">
-                                <img src="{{  asset('assets/uploads/products/'.$prod->image)  }}" alt="Product image">
+                                <img src="{{  asset('assets/uploads/products/'.$prod->image)  }}" class="image-new" alt="Product image">
                                     <div class="card-body">
                                         <h5><b>{{   $prod->name   }}</b></h5>
                                         <span class="float-start">₱{{ $prod->selling_price  }}</span>
@@ -38,7 +38,7 @@
                         <div class="item">
                             <a href="{{  url('category/'.$tcategory->slug)   }}">
                                 <div class="card">
-                                    <img src="{{  asset('assets/uploads/category/'.$tcategory->image)  }}" alt="Product image" style="width:100%">
+                                    <img src="{{  asset('assets/uploads/category/'.$tcategory->image)  }}" alt="Product image" class="image-new">
                                         <div class="card-body">
                                             <h5>{{   $tcategory->name   }}</h5>
                                                 <p>

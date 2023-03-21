@@ -76,7 +76,7 @@
             <div class="">
                 <div class="row">
                     <div class="col-md-4 border-right">
-                        <img src="{{  asset('assets/uploads/products/'.$products->image)  }}" class="w-100" alt="">
+                        <img src="{{  asset('assets/uploads/products/'.$products->image)  }}" class="w-100" height="400px" alt="">
                     </div>
                     <div class="col-md-8">
                         <h2 class="mb-0 text-white">

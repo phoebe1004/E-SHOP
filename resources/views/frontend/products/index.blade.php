@@ -27,7 +27,7 @@
                         <div class="col-md-3 mb-3">
                             <div class="card">
                                 <a href="{{  url('category/'.$category->slug.'/'.$prod->slug)   }}">
-                                    <img src="{{  asset('assets/uploads/products/'.$prod->image)  }}" class="w-100" alt="Prdouct image">
+                                    <img src="{{  asset('assets/uploads/products/'.$prod->image)  }}" class="w-100" height="250px" alt="Product image">
                                     <div class="card-body">
                                             <h5><b>{{   $prod->name   }}</b></h5>
                                             <span class="float-start"><b>₱{{ $prod->selling_price  }}</b></span>

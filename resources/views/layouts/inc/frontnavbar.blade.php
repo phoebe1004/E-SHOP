@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="text-white navbar-brand" href="{{ url('/') }}">Claraxxx E-shop</a>
+      <a class="text-white navbar-brand" href="{{ url('/') }}">Phoebe E-shop</a>
             <div class="search-bar">
                 <form action="{{url('searchproduct')}}" method="POST">
                     @csrf
@@ -58,12 +58,12 @@
                       </li>
 
                         <li><a class="dropdown-item" href="{{ url('/dashboard') }}">
-                            <i class="fas fa-user"></i> <b> Profile </b>
+                            <i class="fas fa-user"></i> Profile
                             </a>
                         </li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    <i class="fas fa-sign-out-alt"></i> <b> {{ __('Logout') }} </b>
+                                    <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
                                 </a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf

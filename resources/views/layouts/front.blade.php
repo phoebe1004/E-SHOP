@@ -38,10 +38,14 @@
 
 </head>
 <body>
+
     @include('layouts.inc.frontnavbar')
 
     <div class="content">
         @yield('content')
+
+    </div>
+    <div>
 
     </div>
 
