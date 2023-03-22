@@ -36,7 +36,7 @@ class CategoryController extends Controller
         $category->status = $request->input('status') == TRUE ? '1':'0';
         $category->popular = $request->input('popular') == TRUE ? '1':'0';
         $category->meta_title = $request->input('meta_title');
-        $category->meta_descrip = $request->input('meta_description');
+        $category->meta_descrip = $request->input('meta_descrip');
         $category->meta_keywords = $request->input('meta_keywords');
         $category->save();
         return redirect('/dashboard')->with('status', "Category Added Successfuly");

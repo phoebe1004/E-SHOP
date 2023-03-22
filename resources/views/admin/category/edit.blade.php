@@ -36,14 +36,14 @@
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for=""><b>Meta Description</b></label>
-                        <textarea name="meta_description" rows="3" class="form-control">{{  $category->meta_description  }}</textarea>
+                        <textarea name="meta_descrip" rows="3" class="form-control">{{  $category->meta_descrip  }}</textarea>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for=""><b>Meta Keywords</b></label>
                         <textarea name="meta_keywords" rows="3" class="form-control">{{  $category->meta_keywords  }}</textarea>
                     </div>
                     @if ($category->image)
-                        <img src="{{  asset('assets/uploads/category/'.$category->image)  }}" alt="Category image">
+                        <img src="{{  asset('assets/uploads/category/'.$category->image)  }}" class="image-new" alt="Category image">
                     @endif
                     <div class="col-md-12">
                         <input type="file" name="image" class="form-control" >

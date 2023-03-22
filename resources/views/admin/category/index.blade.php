@@ -24,7 +24,7 @@
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->description }}</td>
                             <td>
-                                <img src="{{ asset('assets/uploads/category/'.$item->image) }}" class="cate-image" alt="Image here">
+                                <img src="{{ asset('assets/uploads/category/'.$item->image) }}" class="cate-image" alt="Image here" multiple>
                             </td>
                             <td>
                                 <a href="{{ url('edit-category/'.$item->id) }}" class="btn btn-primary">Edit</a>
